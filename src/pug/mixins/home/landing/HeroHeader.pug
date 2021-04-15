@@ -1,0 +1,26 @@
+mixin HeroHeader
+  +Section('container-fluid').py-7
+    .row
+      .col-md-7.col-lg-4.offset-lg-1.py-7.ps-6
+        h1.display-3.text-1000.fw-normal Plan a tour today
+        h1.display-3.text-primary.fw-bold Just How You Want
+        .pt-7
+          nav
+            .nav.nav-tabs.voyage-tabs#nav-tab(role='tablist')
+              button.nav-link.active#nav-home-tab(data-bs-toggle='tab' data-bs-target='#nav-home' type='button' role='tab' aria-controls='nav-home' aria-selected='true')
+                i.fas.fa-map-marker-alt
+              button.nav-link#nav-profile-tab(data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false') 
+                i.fas.fa-plane
+              button.nav-link#nav-contact-tab(data-bs-toggle='tab' data-bs-target='#nav-contact' type='button' role='tab' aria-controls='nav-contact' aria-selected='false') 
+                i.fas.fa-hotel
+            .tab-content#nav-tabContent
+              .tab-pane.fade.show.active#nav-home(role='tabpanel' aria-labelledby='nav-home-tab') ...
+              .tab-pane.fade#nav-profile(role='tabpanel' aria-labelledby='nav-profile-tab') ...
+              .tab-pane.fade#nav-contact(role='tabpanel' aria-labelledby='nav-contact-tab') ...
+      .col-md-7.col-lg-7.pe-0.text-end
+        img.img-fluid.order-md-0.mb-4(src=`${CWD}assets/img/gallery/hero-section-1.png`  alt='...')  
+    .row
+      .col-md-7.col-lg-4.offset-lg-1.py-7.ps-6 
+        img.img-fluid.order-md-0.mb-4(src=`${CWD}assets/img/gallery/hero-section-2.png`  alt='...')    
+      .col-md-7.col-lg-7.pe-0.text-end
+        
