@@ -1,0 +1,92 @@
+append variables
+  -
+    var testimonials= [
+      {
+        
+        image:'maldives.png',
+        title:'Paradise Island Resort & Spa: The best way to enjoy your vacation',
+        time:'20:04:32:21',
+        type:'trending',
+        price:'$450',
+        name: 'Daniel Lane,',
+        designation : 'Developer',
+        text: 'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
+      },
+      {
+        image:'cinnamon.png',
+        title:'Excellent !',
+        name: 'Ainara Vergara,',
+        designation : 'Designer',
+        text: 'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
+      },
+      {
+        image:'dhigu.png',
+        title:'Excellent !',
+        name: 'Niek Bove,',
+        designation :'Senior Developer',
+        text:'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
+      },
+      
+    ];
+
+
+mixin Items(config)
+   .col-md-4.mb-3.mb-md-0
+    .card.card-span.h-100.text-white
+      img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}`    alt='').h-100
+      .card-img-overlay.ps-0.d-flex.flex-column.justify-content-between.bg-dark-gradient
+        .pt-3
+          span.badge.bg-primary.ms-4.me-2=config.time
+          span.badge.bg-secondary=config.type
+        .ps-3.d-flex.justify-content-between.align-items-center  
+          h5.text-white=config.country
+          h6.text-600=config.days
+      .card-body 
+        h5.fw-bold.text-1000=config.title 
+mixin FlashDeals
+  section.py-5#testimonial
+    +Background({image: `${CWD}assets/img/illustrations/testimonial-bg-1.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: '' })
+    +Background({image: `${CWD}assets/img/illustrations/testimonial-bg.png`, attrs: { style: { 'background-position': 'right top', 'background-size': 'auto','margin-top':'-43px','margin-left':'-200px'} }, className: '' })
+    .container-xxl
+      .row.h-100
+        .col-lg-7.mx-auto.text-center.mb-6
+          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Flash Deals
+        .col-12
+          #carouselTestimonials.carousel.slide(data-bs-ride='carousel')
+      
+            .carousel-inner.ps-sm-7.pb-sm-7.ps-md-5.ps-lg-7.pb-lg-7
+              .carousel-item.active(data-bs-interval='10000')
+                .row.h-100.align-items-center                
+                  +Items(testimonials[0])                                                                    
+                  +Items(testimonials[1])                                                                    
+                  +Items(testimonials[2])                                                                    
+              .carousel-item(data-bs-interval='5000')
+                .row.h-100.align-items-center                
+                  +Items(testimonials[0])                                                                    
+                  +Items(testimonials[1])                                                                    
+                  +Items(testimonials[2])                      
+              .carousel-item(data-bs-interval='3000')
+                .row.h-100.align-items-center                                  
+                  +Items(testimonials[0])                                                                    
+                  +Items(testimonials[1])                                                                    
+                  +Items(testimonials[2])                       
+              .carousel-item
+                .row.h-100.align-items-center          
+                  +Items(testimonials[0])                                                                    
+                  +Items(testimonials[1])                                                                    
+                  +Items(testimonials[2])    
+              .row
+                button.carousel-control-prev(type='button' data-bs-target='#carouselTestimonials' data-bs-slide='prev')
+                  span.carousel-control-prev-icon(aria-hidden='true')
+                  span.visually-hidden Previous
+                button.carousel-control-next(type='button' data-bs-target='#carouselTestimonials' data-bs-slide='next')
+                  span.carousel-control-next-icon(aria-hidden='true')
+                  span.visually-hidden Next                                    
+            .row.flex-center
+              .col-auto.position-relative.z-index-2
+                ol.carousel-indicators.me-xxl-7.me-xl-4.me-lg-7
+                  li.active(data-bs-target='#carouselTestimonials' data-bs-slide-to='0')
+                  li(data-bs-target='#carouselTestimonials' data-bs-slide-to='1')
+                  li(data-bs-target='#carouselTestimonials' data-bs-slide-to='2')
+                  li(data-bs-target='#carouselTestimonials' data-bs-slide-to='3')
+

@@ -57,9 +57,9 @@
                   <div class="d-flex align-items-center"><span class="nav-link-icon text-800"><i class="fas fa-bolt"></i></span><span class="nav-link-text">Activities</span></div>
                 </a></li>
             </ul>
-            <form class="ps-lg-5">
-              <button class="btn btn-link text-800 fw-bold order-1 order-lg-0" type="button">Support</button>
-              <button class="btn btn-voyage-outline order-0" type="submit"><span class="fw-bold text-primary">Sign in</span></button>
+            <form>
+              <button class="btn text-800 order-1 order-lg-0 me-2" type="button">Support</button>
+              <button class="btn btn-voyage-outline order-0" type="submit"><span class="text-primary">Sign in</span></button>
             </form>
           </div>
         </div>
@@ -72,7 +72,7 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-7 col-lg-4 offset-lg-1 py-7 ps-6">
+            <div class="col-md-6 col-lg-4 offset-lg-1 py-7 ps-6">
               <h1 class="display-3 text-1000 fw-normal">Plan a tour today</h1>
               <h1 class="display-3 text-primary fw-bold">Just How You Want</h1>
               <div class="pt-7">
@@ -83,27 +83,304 @@
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"> <i class="fas fa-hotel"></i></button>
                   </div>
                   <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <form class="row g-4 mt-5">
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddress1">Address 1</label>
+                            <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddress2">Address 2</label>
+                            <input class="form-control input-box form-voyage-control" id="inputAddress2" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label visually-hidden" for="inputState">State</label>
+                          <input class="form-control input-box form-voyage-control" id="inputAddress2" type="date" placeholder="3 Sep,2021" />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label visually-hidden" for="inputState">State</label>
+                          <select class="form-select form-voyage-select" id="inputState">
+                            <option selected="selected">23 Sep,2021</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputState">State</label>
+                            <select class="form-select form-voyage-select input-box" id="inputState">
+                              <option selected="selected">2 Adults</option>
+                              <option>2 Adults 1 children</option>
+                              <option>2 Adults 2 children</option>
+                            </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-12 d-grid">
+                          <button class="btn btn-secondary" type="submit">Search Packages</button>
+                        </div>
+                      </form>
+                    </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
                   </div>
                 </nav>
               </div>
             </div>
-            <div class="col-md-7 col-lg-7 pe-0 text-end"><img class="img-fluid order-md-0 mb-4" src="assets/img/gallery/hero-section-1.png" alt="..." /></div>
+            <div class="col-md-6 col-lg-7 pe-0 text-end"><img class="img-fluid mb-4 h-100" src="assets/img/gallery/hero-section-1.png" alt="..." width="951" /></div>
           </div>
           <div class="row">
-            <div class="col-md-7 col-lg-4 offset-lg-1 py-7 ps-6"> <img class="img-fluid order-md-0 mb-4" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
-            <div class="col-md-7 col-lg-7 pe-0 text-end"></div>
+            <div class="col-md-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
+            <div class="col-md-6 px-0 bg-primary-gradient">
+              <div class="mx-6 mx-xl-8 my-8">
+                <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/locations.png" alt="..." />
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold text-light">Travel the best of locations</h5>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/schedule.png" alt="..." />
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold text-light">Plan your own schedule</h5>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/save.png" alt="..." />
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold text-light">Save upto 50% on everything</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- end of .container-->
+        </div><!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
 
+      <section class="py-5" id="testimonial">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg-1.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg.png);background-position:right top;background-size:auto;margin-top:-43px;margin-left:-200px;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container-xxl">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Flash Deals</h5>
+            </div>
+            <div class="col-12">
+              <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
+                <div class="carousel-inner ps-sm-7 pb-sm-7 ps-md-5 ps-lg-7 pb-lg-7">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2">20:04:32:21</span><span class="badge bg-secondary">trending</span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Paradise Island Resort &amp; Spa: The best way to enjoy your vacation</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/cinnamon.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/dhigu.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2">20:04:32:21</span><span class="badge bg-secondary">trending</span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Paradise Island Resort &amp; Spa: The best way to enjoy your vacation</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/cinnamon.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/dhigu.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2">20:04:32:21</span><span class="badge bg-secondary">trending</span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Paradise Island Resort &amp; Spa: The best way to enjoy your vacation</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/cinnamon.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/dhigu.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2">20:04:32:21</span><span class="badge bg-secondary">trending</span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Paradise Island Resort &amp; Spa: The best way to enjoy your vacation</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/cinnamon.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/dhigu.png" alt="" />
+                          <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
+                            <div class="pt-3"><span class="badge bg-primary ms-4 me-2"></span><span class="badge bg-secondary"></span></div>
+                            <div class="ps-3 d-flex justify-content-between align-items-center">
+                              <h5 class="text-white"></h5>
+                              <h6 class="text-600"></h6>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="fw-bold text-1000">Excellent !</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next                                    </span></button>
+                  </div>
+                </div>
+                <div class="row flex-center">
+                  <div class="col-auto position-relative z-index-2">
+                    <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                      <li class="active" data-bs-target="#carouselTestimonials" data-bs-slide-to="0"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="2"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="3"></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- ===============================================-->
     <!--    End of Main Content-->

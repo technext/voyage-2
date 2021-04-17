@@ -318,7 +318,7 @@ $blockquote-font-size: $font-size-lg !default;
 //|   Buttons and Forms
 //-----------------------------------------------*/
 $input-bg           :  tint-color($gray-300, 90) !default;
-$input-placeholder-color:     tint-color($gray-300, 10) !important;
+$input-placeholder-color:    $gray-1000 !important;
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: 1.5rem !default;
 
@@ -332,7 +332,7 @@ $input-btn-font-size-lg:  $font-size-base !default;
 $btn-reveal-hover-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),
   0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.07),
   0 1px 2px 0 rgba($black, 0.08) !default;
-$btn-font-weight: $font-weight-medium !default;
+$btn-font-weight: $font-weight-bold!default;
 $btn-focus-width: 0 !default;
 
 // Allows for customizing button radius independently from global border radius
@@ -418,7 +418,7 @@ $hr-opacity: 1 !default;
 //*-----------------------------------------------
 //|   card
 //-----------------------------------------------*/
-$card-border-radius:                2.5rem !default;
+// $card-border-radius:                2.5rem !default;
 $card-cap-bg:                        tint-color($gray-500, 90%) !default;
 
 
@@ -427,16 +427,16 @@ $card-cap-bg:                        tint-color($gray-500, 90%) !default;
 //-----------------------------------------------*/
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color:             $gray-1000 !default;
+$carousel-control-color:             $primary !default;
 
 $carousel-indicator-active-bg:       $primary !default;
-$carousel-indicator-width:           14px !default;
-$carousel-indicator-height:          8px !default;
+$carousel-indicator-width:           25px !default;
+$carousel-indicator-height:          4px !default;
 $carousel-indicator-hit-area-height : 0 !default;
 
 
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
+// $carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
+// $carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
 
 // Navs
 $nav-tabs-link-active-color:        $secondary !default;
