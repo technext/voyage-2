@@ -282,7 +282,7 @@ $h5-font-size: map_get($font-sizes, 1) !default;
 $h6-font-size: map_get($font-sizes, '-1') !default;
 
 $headings-font-family: $font-family-sans-serif !default;
-$headings-font-weight: $font-weight-medium !default;
+$headings-font-weight: $font-weight-bold !default;
 $headings-color: $gray-1200 !default;
 
 // scss-docs-start display-headings

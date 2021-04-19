@@ -67,14 +67,7 @@
 .bg-primary-gradient{
   background: linear-gradient(90deg,rgba(48, 17, 188, 1), rgba(126, 17, 188, 1));
 }
-//Hero section
 
-.bg-size{
-  background-size: cover;
-}
-@include media-breakpoint-up(xl){
-  .bg-size{
-    background-size: contain;
-  }
-
+.bg-secondary-gradient{
+  background: linear-gradient(90deg,rgba(254, 190, 21, 1), rgba(254, 122, 21, 1));
 }
