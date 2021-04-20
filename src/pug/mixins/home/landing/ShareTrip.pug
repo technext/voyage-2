@@ -35,10 +35,10 @@ mixin Share(config)
 
 mixin ShareTrip 
 	+Section('container-fluid').py-7
-		.row
-			.col-lg-5.px-0
+		.row.g-0
+			.col-lg-5
 				img.w-100(src=`${CWD}assets/img/gallery/share.png` width='600' alt='...')  
-			.col-6.ps-0
+			.col-lg-5
 				#carouselShare.carousel.slide(data-bs-ride='carousel')
 					.carousel-inner
 						.carousel-item.active(data-bs-interval='10000')

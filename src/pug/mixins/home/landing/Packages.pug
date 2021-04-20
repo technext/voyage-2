@@ -1,16 +1,81 @@
+append variables
+	-
+		var packages= [
+			{
+				image:'sky-the-limit.png',
+				title:'Sky the Limit',
+				price:'$175',
+				country:'Manali',
+				days:'4 days',
+			},
+			{
+				image:'beyond-the-blues.png',
+				title:'Beyond the Blues',
+				price:'$175',
+				country:'Maldives',
+				days:'4 days',
+			},
+			{
+				image:'green.png',
+				title:'Within the Gren',
+				price:'$175',
+				country:'Phillipines',
+				days:'4 days',
+			},
+			{
+				image:'queens-gambit.png',
+				title:'Queens Gambit',
+				price:'$175',
+				country:'London',
+				days:'4 days',
+			},
+			{
+				image:'canals.png',
+				title:'City of canals',
+				price:'$175',
+				country:'Maldives',
+				days:'4 days',
+			},
+			{
+				image:'mountain-venture.png',
+				title:'Mountain Venture',
+				price:'$175',
+				country:'Maldives',
+				days:'4 days',
+			},
+
+		];
+
+mixin PackageItem(config)
+	.card.card-span.h-100.text-white
+		img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/${config.image}` height='375'  alt='...')
+		.card-img-overlay.ps-0.d-flex.flex-column.justify-content-between.bg-voyage-gradient
+			.mt-auto.px-4
+				h3.text-white=config.title
+				.d-flex.align-items-center.justify-content-start
+					span.text-light.fs--1.me-1
+						i.fas.fa-map-marker-alt
+					span.text-light.me-3=config.country
+					span.text-light.fs--1.me-1
+						i.fas.fa-calendar
+					span.text-light=config.days
+				h1.my-2.text-light.fw-bolder.fs-4
+					span=config.price
+					span.text-light.fs--1.fw-normal /Per person
+
+
 mixin Packages
 	+Section('container-fluid').py-7
-		//- +Background({ image: `${CWD}assets/img/gallery/destination-bg.png`, attrs: { style: { 'background-position': 'right center', 'background-size': '283px 1422px','margin-top':'4px'} }, className: 'd-none d-xxl-block' })
 		.row.g-2
-			.col-sm-6.col-md-4.col-lg-3.offset-lg-1
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/agra.png` height='375'  alt='...')
+			.col-sm-6.col-md-4.col-lg-3.offset-lg-2
+				+PackageItem(packages[0])
 			.col-sm-6.col-md-4.col-lg-3
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/kualalampur.png` height='375'  alt='...')
+				+PackageItem(packages[1])
 			.col-12.col-md-4.col-lg-4
 				.bg-primary-gradient.h-100
 					.row.g-0.justify-content-start
 						.col-lg-9
-							.p-6.py-lg-8.py-md-5.px-md-3.text-light
+							.p-6.py-md-5.px-md-3.px-lg-4.py-lg-8.text-light
 								i.fas.fa-gift.fs-5.mb-3
 								h2.mb-3.text-light popular Packages
 								p Enjoy our pakages to the places our travellers 
@@ -19,21 +84,22 @@ mixin Packages
 									br.d-none.d-lg-block
 									|you, and your family.
 
+			.col-sm-6.col-md-4.col-lg-3.offset-lg-2
+				+PackageItem(packages[2])
+			.col-sm-6.col-md-4.col-lg-3
+				+PackageItem(packages[3])
+			.col-sm-6.col-md-4.col-lg-3
+				+PackageItem(packages[4])
 
-			.col-sm-6.col-md-4.col-lg-3.offset-lg-1
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/munich.png` height='375'  alt='...')
+			.col-sm-6.col-md-8.col-lg-6.offset-lg-2
+				.bg-secondary-gradient.h-100
+					.row.g-0.flex-center
+						.col-lg-5
+							.py-lg-8.px-4.text-light.py-6
+								p.fs-1.ps-4 We have more packages to share with you. Just one click away!
+								.mt-4
+									a.btn.btn-lg.text-light.fs-2(href='#' role='button') Click to view more
+									svg.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='62' height='62' fill='currentColor' viewBox='0 0 16 16')
+										path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z')
 			.col-sm-6.col-md-4.col-lg-3
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/paris.png` height='375'  alt='...')    
-			.col-sm-6.col-md-4.col-lg-3
-				.bg-secondary-gradient.py-lg-8.px-4.text-light.py-6.h-100
-					p Don’t see a place according to your choice? Don’t worry. We have more for you.
-					a.btn.btn-lg.ps-0.pe-3.text-light.fw-normal(href='#' role='button') Click to view more
-					svg.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='26' height='26' fill='currentColor' viewBox='0 0 16 16')
-						path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z')
-
-			.col-sm-6.col-md-4.col-lg-3.offset-lg-1
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/vienna.png` height='375'  alt='...')
-			.col-sm-6.col-md-4.col-lg-3
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/prague.png` height='375'  alt='...')
-			.col-sm-6.col-md-4.col-lg-3
-				img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/agra.png` height='375'  alt='...')    
+				+PackageItem(packages[5])

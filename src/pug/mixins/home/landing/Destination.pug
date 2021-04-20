@@ -1,13 +1,64 @@
+append variables
+  -
+    var destinations= [
+      {
+        image:'agra.png',
+        country:'Agra',
+        packages:'10 Packages',
+      },
+      {
+        image:'kualalumpur.png',
+        country:'Kuala Lumpur',
+        packages:'10 Packages',
+      },
+      {
+        image:'munich.png',
+        country:'Munich',
+        packages:'10 Packages',
+      },
+      {
+        image:'paris.png',
+        country:'Paris',
+        packages:'10 Packages',
+      },
+      {
+        image:'vienna.png',
+        country:'Vienna',
+        packages:'10 Packages',
+      },
+      {
+        image:'pregue.png',
+        country:'Pregue',
+        packages:'10 Packages',
+      },
+      {
+        image:'agra.png',
+        country:'Agra',
+        packages:'10 Packages',
+      },
+
+    ];
+
+
+mixin DestinationItem(config)
+  .card.card-span.h-100.text-white
+    img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/${config.image}` height='375'  alt='...')
+    .card-img-overlay.ps-0.d-flex.flex-column.justify-content-between.bg-voyage-gradient
+      .mt-auto.px-4
+        h3.text-white=config.country
+        span.text-light.fs--1.me-1
+          i.fas.fa-gift
+        span.text-light.me-3=config.packages
+
 mixin Destination
   +Section('container-fluid').py-7
     //- +Background({ image: `${CWD}assets/img/gallery/destination-bg.png`, attrs: { style: { 'background-position': 'right center', 'background-size': '283px 1422px','margin-top':'4px'} }, className: 'd-none d-xxl-block' })
-    .row.g-2
+    .row.g-2.mb-2
       .col-12.col-md-4.col-lg-4
         .bg-primary-gradient.h-100
           .row.g-0.justify-content-end
             .col-lg-9
-              .p-6.py-lg-8.py-md-5.px-md-3.text-light
-                //- .offset-md-0.offset-lg-4
+              .p-6.py-md-5.px-md-3.py-lg-8.ps-lg-6.text-light
                 i.fas.fa-map-marker-alt.fs-5.mb-3
                 h2.mb-3.text-light popular destinations 
                 p Enjoy our pakages to the places our travellers 
@@ -16,25 +67,52 @@ mixin Destination
                   br.d-none.d-lg-block
                   |you, and your family.
       .col-sm-6.col-md-4.col-lg-3
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/agra.png` height='375'  alt='...')
+        +DestinationItem(destinations[0])
       .col-sm-6.col-md-4.col-lg-3
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/kualalampur.png` height='375'  alt='...')
-    
+        +DestinationItem(destinations[1])
+    .row.g-2    
       .col-sm-6.col-md-4.col-lg-3.offset-lg-1
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/munich.png` height='375'  alt='...')
+        .row.g-2
+          .col-12 
+            +DestinationItem(destinations[2])
+          .col-12 
+            +DestinationItem(destinations[2])
       .col-sm-6.col-md-4.col-lg-3
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/paris.png` height='375'  alt='...')    
+        .row.g-2 
+          .col-12 
+            +DestinationItem(destinations[3])
+          .col-12 
+            +DestinationItem(destinations[4])
       .col-sm-6.col-md-4.col-lg-3
-        .bg-secondary-gradient.py-lg-8.px-4.text-light.py-6.h-100
-          p Don’t see a place according to your choice? Don’t worry. We have more for you.
-          a.btn.btn-lg.ps-0.pe-3.text-light.fw-normal(href='#' role='button') Click to view more
-          svg.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='26' height='26' fill='currentColor' viewBox='0 0 16 16')
-            path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z')
-  
-      .col-sm-6.col-md-4.col-lg-3.offset-lg-1
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/vienna.png` height='375'  alt='...')
-      .col-sm-6.col-md-4.col-lg-3
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/prague.png` height='375'  alt='...')
-      .col-sm-6.col-md-4.col-lg-3
-        img.img-fluid.h-100.w-100(src=`${CWD}assets/img/gallery/agra.png` height='375'  alt='...')    
-      
+        .bg-secondary-gradient.h-100.d-flex.align-items-center
+          .text-light
+            p.fs-1.ps-4 Don’t see a place according to your choice? Don’t worry. We have more for you.
+            .pt-4
+              a.btn.btn-lg.text-light.fs-2(href='#' role='button') Click to view more
+              svg.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='62' height='62' fill='currentColor' viewBox='0 0 16 16')
+                path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z')
+
+         
+        
+
+    //- .col-sm-6.col-md-4.col-lg-3
+    //-   +DestinationItem(destinations[3])    
+    //- .col-sm-6.col-md-4.col-lg-3
+    //-   .bg-secondary-gradient.h-100
+    //-     .row.g-0.flex-center
+    //-       .col-lg-9
+    //-         .py-lg-8.text-light.py-6
+    //-           p.fs-1.ps-4 Don’t see a place according to your choice? Don’t worry. We have more for you.
+    //-           .pt-6
+    //-             a.btn.btn-lg.text-light.fs-2(href='#' role='button') Click to view more
+    //-             svg.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='62' height='62' fill='currentColor' viewBox='0 0 16 16')
+    //-               path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z')
+
+
+    //- .row.g-2
+    //-   .col-sm-6.col-md-4.col-lg-3.offset-lg-1
+    //-     +DestinationItem(destinations[4])
+    //-   .col-sm-6.col-md-4.col-lg-3
+    //-     +DestinationItem(destinations[5])
+    //-   .col-sm-6.col-md-4.col-lg-3
+    //-     +DestinationItem(destinations[6]) 
