@@ -1,0 +1,66 @@
+append variables
+  -
+    var routs= [
+      {
+        bg:'primary',
+        destination:'Dhaka-Chittagong',
+        name:'John Oliver',
+      },
+      {
+        image:'blog-2.png',
+        userImage:'author-2.png',
+        name:'Emman Watson',
+        time:'5 min Read',
+        title:'10 ways to pack before a solo trip',
+        text:'How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...',
+      },
+      {
+        image:'blog-3.png',
+        userImage:'author-3.png',
+        name:'Brad Hughes',
+        time:'5 min Read',
+        title:'Looking for a good place to stay in your trip?',
+        text:'Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...',
+      },
+
+    ];
+
+
+
+mixin RoutsItem 
+  .bg-primary.p-4.py-6 
+    h5.text-light Dhaka - Chattagong 
+    h6.text-light.fw-normal From $100
+    i.fas.fa-arrow-right.text-light
+
+mixin PopulerRoutes
+  section.py-5
+    .container
+      .row.h-100
+        .col-lg-7.mx-auto.text-center.mb-6
+          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Cheapest Flights in Popular Routs
+      .row.justify-content-between.g-0 
+        .col-auto     
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem 
+        .col-auto     
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem
+        .col-auto  
+          +RoutsItem   
