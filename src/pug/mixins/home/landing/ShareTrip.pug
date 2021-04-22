@@ -34,11 +34,11 @@ mixin Share(config)
 			p.fw-normal.mb-0=config.description
 
 mixin ShareTrip 
-	+Section('container-fluid').py-7
+	+Section.py-7
 		.row.g-0
-			.col-lg-5
-				img.w-100(src=`${CWD}assets/img/gallery/share.png` width='600' alt='...')  
-			.col-lg-5
+			.col-lg-6.order-1.order-lg-0
+				img.w-100.h-100(src=`${CWD}assets/img/gallery/share.png` width='600' alt='...')  
+			.col-lg-6
 				#carouselShare.carousel.slide(data-bs-ride='carousel')
 					.carousel-inner
 						.carousel-item.active(data-bs-interval='10000')
