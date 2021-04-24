@@ -34,21 +34,13 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="#"><img class="d-inline-block" src="assets/img/gallery/logo.png" width="50" alt="logo" /><span class="fw-bold text-primary ms-2">voyage</span></a><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="d-inline-block" src="assets/img/gallery/logo.png" width="50" alt="logo" /><span class="fw-bold text-primary ms-2">voyage</span></a><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="#home">
-                  <div class="d-flex align-items-center"><span class="nav-link-icon text-800"><i class="fas fa-map-marker-alt"></i></span><span class="nav-link-text">Locations </span></div>
-                </a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#service">
-                  <div class="d-flex align-items-center"><span class="nav-link-icon text-800"><i class="fas fa-plane"></i></span><span class="nav-link-text">Flights</span></div>
-                </a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#feature">
-                  <div class="d-flex align-items-center"><span class="nav-link-icon text-800"><i class="fas fa-hotel"></i></span><span class="nav-link-text">Hotels</span></div>
-                </a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#testimonial">
-                  <div class="d-flex align-items-center"><span class="nav-link-icon text-800"><i class="fas fa-bolt"></i></span><span class="nav-link-text">Activities</span></div>
-                </a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="#destinations"><span class="nav-link-icon text-800 fas fa-map-marker-alt"></span><span class="nav-link-text">Locations </span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="#flights"> <span class="nav-link-icon text-800 fas fa-plane"></span><span class="nav-link-text">Flights</span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="#hotels"> <span class="nav-link-icon text-800 fas fa-hotel"></span><span class="nav-link-text">Hotels</span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="#activities"><span class="nav-link-icon text-800 fas fa-bolt"></span><span class="nav-link-text">Activities</span></a></li>
             </ul>
             <form><button class="btn text-800 order-1 order-lg-0 me-2" type="button">Support</button><button class="btn btn-voyage-outline order-0" type="submit"><span class="text-primary">Sign in</span></button></form>
           </div>
@@ -75,57 +67,61 @@
                           <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddress2">Address 2</label><input class="form-control input-box form-voyage-control" id="inputAddress2" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span></div>
                         </div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate1">Date 1</label><input class="form-control input-box form-voyage-control" id="inputdate1" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                          <div class="input-group-icon"><input class="form-control input-box form-voyage-control" id="inputdateOne" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
                         </div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate2">Date 2</label><input class="form-control input-box form-voyage-control" id="inputDate2" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                          <div class="input-group-icon"><input class="form-control input-box form-voyage-control" id="inputDateTwo" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
                         </div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputperson">Person</label><select class="form-select form-voyage-select input-box" id="inputState">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputPersonOne">Person</label><select class="form-select form-voyage-select input-box" id="inputPersonOne">
                               <option selected="selected">2 Adults</option>
                               <option>2 Adults 1 children</option>
                               <option>2 Adults 2 children</option>
                             </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span></div>
                         </div>
-                        <div class="col-12 d-grid"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
+                        <div class="col-12 d-grid mt-7"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
                       </form>
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                       <form class="row g-4 mt-5">
                         <div class="col-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddress1">Address 1</label><input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span></div>
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddressThree">Address 1</label><input class="form-control input-box form-voyage-control" id="inputAddressThree" type="text" placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span></div>
                         </div>
                         <div class="col-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddress2">Address 2</label><input class="form-control input-box form-voyage-control" id="inputAddress2" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span></div>
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddressFour">Address 2</label><input class="form-control input-box form-voyage-control" id="inputAddressFour" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span></div>
                         </div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate1">Date 1</label><input class="form-control input-box form-voyage-control" id="inputdate1" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                          <div class="input-group-icon"><input class="form-control input-box form-voyage-control" id="inputDateThree" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
                         </div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate2">Date 2</label><input class="form-control input-box form-voyage-control" id="inputDate2" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                          <div class="input-group-icon"><input class="form-control input-box form-voyage-control" id="inputDateFour" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
                         </div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputState">State</label><select class="form-select form-voyage-select input-box" id="inputState">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputPeopleTwo">People</label><select class="form-select form-voyage-select input-box" id="inputPeopleTwo">
                               <option selected="selected">2 Adults</option>
                               <option>2 Adults 1 children</option>
                               <option>2 Adults 2 children</option>
                             </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span></div>
                         </div>
-                        <div class="col-12 d-grid"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
+                        <div class="col-12 d-grid mt-7"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
                       </form>
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                       <form class="row g-4 mt-5">
-                        <div class="col-md-6"><label class="form-label visually-hidden" for="inputState1">State</label><input class="form-control input-box form-voyage-control" id="inputdate1" type="date" placeholder="3 Sep,2021" /></div>
-                        <div class="col-md-6"><label class="form-label visually-hidden" for="inputState2">State</label><input class="form-control input-box form-voyage-control" id="inputDate2" type="date" placeholder="3 Sep,2021" /></div>
                         <div class="col-md-6">
-                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputState">State</label><select class="form-select form-voyage-select input-box" id="inputState">
+                          <div class="input-group-icon"><input class="form-control input-box form-voyage-control" id="inputDateFive" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><input class="form-control input-box form-voyage-control" id="inputDateSix" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputPeopleThree">Person</label><select class="form-select form-voyage-select input-box" id="inputPeopleThree">
                               <option selected="selected">2 Adults</option>
                               <option>2 Adults 1 children</option>
                               <option>2 Adults 2 children</option>
                             </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span></div>
                         </div>
-                        <div class="col-12 d-grid"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
+                        <div class="col-12 d-grid mt-7"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
                       </form>
                     </div>
                   </div>
@@ -141,8 +137,8 @@
       <section class="py-0 overflow-hidden">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
-            <div class="col-md-12 col-lg-6 px-0 bg-primary-gradient bg-offcanvas-right">
+            <div class="col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4 w-100 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
+            <div class="col-lg-6 px-0 bg-primary-gradient bg-offcanvas-right">
               <div class="mx-6 mx-xl-8 my-8">
                 <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/locations.png" alt="..." />
                   <div class="flex-1 align-items-center pt-2">
@@ -367,7 +363,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-7">
+      <section class="py-7" id="destinations">
         <div class="container">
           <div class="row g-2 mb-2">
             <div class="col-12 col-md-4 col-lg-4">
@@ -645,7 +641,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-7">
+      <section class="py-7" id="activities">
         <div class="container">
           <div class="row g-0">
             <div class="col-lg-4 order-1"><img class="w-100" src="assets/img/gallery/bungee-jumping.png" height="750" alt="..." /></div>
@@ -721,7 +717,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-7">
+      <section class="py-7" id="hotels">
         <div class="container">
           <div class="row g-2">
             <div class="col-sm-6 col-md-4">
@@ -971,7 +967,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-0">
+      <section class="py-0" id="flights">
         <div class="container-fluid">
           <div class="row h-100">
             <div class="col-lg-7 mx-auto text-center mb-6">
