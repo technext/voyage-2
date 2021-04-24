@@ -34,7 +34,7 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="#"><img class="d-inline-block" src="assets/img/gallery/logo.png" alt="logo" /><span class="fw-bold text-primary ms-2">voyage</span></a><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="#"><img class="d-inline-block" src="assets/img/gallery/logo.png" width="50" alt="logo" /><span class="fw-bold text-primary ms-2">voyage</span></a><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base">
               <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="#home">
@@ -54,13 +54,12 @@
           </div>
         </div>
       </nav>
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-7">
-        <div class="container-fluid">
+      <section class="mt-7">
+        <div class="bg-holder w-50 bg-right d-none d-lg-block" style="background-image:url(assets/img/gallery/hero-section-1.png);"></div>
+        <!--/.bg-holder-->
+        <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-5 offset-lg-1 py-7 ps-6">
+            <div class="col-lg-6 py-7">
               <h1 class="display-3 text-1000 fw-normal">Plan a tour today</h1>
               <h1 class="display-3 text-primary fw-bold">Just How You Want</h1>
               <div class="pt-7">
@@ -75,11 +74,36 @@
                         <div class="col-6">
                           <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddress2">Address 2</label><input class="form-control input-box form-voyage-control" id="inputAddress2" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span></div>
                         </div>
-                        <div class="col-md-6"><label class="form-label visually-hidden" for="inputState">State</label><input class="form-control input-box form-voyage-control" id="inputAddress2" type="date" placeholder="3 Sep,2021" /></div>
-                        <div class="col-md-6"><label class="form-label visually-hidden" for="inputState">State</label><select class="form-select form-voyage-select" id="inputState">
-                            <option selected="selected">23 Sep,2021</option>
-                            <option>...</option>
-                          </select></div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate1">Date 1</label><input class="form-control input-box form-voyage-control" id="inputdate1" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate2">Date 2</label><input class="form-control input-box form-voyage-control" id="inputDate2" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputperson">Person</label><select class="form-select form-voyage-select input-box" id="inputState">
+                              <option selected="selected">2 Adults</option>
+                              <option>2 Adults 1 children</option>
+                              <option>2 Adults 2 children</option>
+                            </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span></div>
+                        </div>
+                        <div class="col-12 d-grid"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <form class="row g-4 mt-5">
+                        <div class="col-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddress1">Address 1</label><input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span></div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputAddress2">Address 2</label><input class="form-control input-box form-voyage-control" id="inputAddress2" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate1">Date 1</label><input class="form-control input-box form-voyage-control" id="inputdate1" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputDate2">Date 2</label><input class="form-control input-box form-voyage-control" id="inputDate2" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span></div>
+                        </div>
                         <div class="col-md-6">
                           <div class="input-group-icon"><label class="form-label visually-hidden" for="inputState">State</label><select class="form-select form-voyage-select input-box" id="inputState">
                               <option selected="selected">2 Adults</option>
@@ -90,17 +114,35 @@
                         <div class="col-12 d-grid"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
                       </form>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                      <form class="row g-4 mt-5">
+                        <div class="col-md-6"><label class="form-label visually-hidden" for="inputState1">State</label><input class="form-control input-box form-voyage-control" id="inputdate1" type="date" placeholder="3 Sep,2021" /></div>
+                        <div class="col-md-6"><label class="form-label visually-hidden" for="inputState2">State</label><input class="form-control input-box form-voyage-control" id="inputDate2" type="date" placeholder="3 Sep,2021" /></div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon"><label class="form-label visually-hidden" for="inputState">State</label><select class="form-select form-voyage-select input-box" id="inputState">
+                              <option selected="selected">2 Adults</option>
+                              <option>2 Adults 1 children</option>
+                              <option>2 Adults 2 children</option>
+                            </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span></div>
+                        </div>
+                        <div class="col-12 d-grid"><button class="btn btn-secondary" type="submit">Search Packages</button></div>
+                      </form>
+                    </div>
                   </div>
                 </nav>
               </div>
             </div>
-            <div class="col-md-6 col-lg-6 px-0"><img class="img-fluid mb-4 h-100" src="assets/img/gallery/hero-section-1.png" alt="..." /></div>
           </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 overflow-hidden">
+        <div class="container">
           <div class="row">
-            <div class="col-md-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
-            <div class="col-md-6 px-0 bg-primary-gradient">
+            <div class="col-md-12 col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
+            <div class="col-md-12 col-lg-6 px-0 bg-primary-gradient bg-offcanvas-right">
               <div class="mx-6 mx-xl-8 my-8">
                 <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/locations.png" alt="..." />
                   <div class="flex-1 align-items-center pt-2">
@@ -125,10 +167,6 @@
       <!-- ============================================-->
 
       <section class="py-5" id="testimonial">
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg-1.png);background-position:center;background-size:cover;"></div>
-        <!--/.bg-holder-->
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg.png);background-position:right top;background-size:auto;margin-top:-43px;margin-left:-200px;"></div>
-        <!--/.bg-holder-->
         <div class="container">
           <div class="row h-100">
             <div class="col-lg-7 mx-auto text-center mb-6">
@@ -138,7 +176,7 @@
               <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
                 <div class="carousel-inner pb-sm-5">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -181,7 +219,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="5000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -224,7 +262,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -267,7 +305,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -330,13 +368,13 @@
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="py-7">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row g-2 mb-2">
             <div class="col-12 col-md-4 col-lg-4">
-              <div class="bg-primary-gradient h-100">
+              <div class="bg-primary-gradient bg-offcanvas h-100">
                 <div class="row g-0 justify-content-end">
-                  <div class="col-lg-9">
-                    <div class="p-6 py-md-5 px-md-3 py-lg-8 ps-lg-6 text-light"><i class="fas fa-map-marker-alt fs-5 mb-3"></i>
+                  <div class="col-12">
+                    <div class="p-6 py-md-5 px-md-3 py-lg-8 text-light"><i class="fas fa-map-marker-alt fs-5 mb-3"></i>
                       <h2 class="mb-3 text-light">popular destinations </h2>
                       <p>Enjoy our pakages to the places our travellers <br class="d-none d-lg-block" />enjoy the most. Affordable, yet enjoyable. For <br class="d-none d-lg-block" />you, and your family.</p>
                     </div>
@@ -344,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/agra.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -353,7 +391,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/kualalumpur.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -364,7 +402,7 @@
             </div>
           </div>
           <div class="row g-2">
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-1">
+            <div class="col-sm-6 col-md-4">
               <div class="row g-2">
                 <div class="col-12">
                   <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/munich.png" height="375" alt="..." />
@@ -386,7 +424,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="row g-2">
                 <div class="col-12">
                   <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/paris.png" height="375" alt="..." />
@@ -408,11 +446,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="bg-secondary-gradient h-100 d-flex align-items-center">
                 <div class="text-light">
-                  <p class="fs-1 ps-4">Don’t see a place according to your choice? Don’t worry. We have more for you.</p>
-                  <div class="pt-4"><a class="btn btn-lg text-light fs-2" href="#" role="button">Click to view more</a><svg class="bi bi-arrow-right-circle" xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="currentColor" viewBox="0 0 16 16">
+                  <p class="fs-1 ps-4 ps-lg-2 ps-xl-4">Don’t see a place according to your choice? Don’t worry. We have more for you.</p>
+                  <div class="pt-4"><a class="btn btn-lg text-light fs-1 fs-lg--1 fs-xl-1" href="#" role="button">Click to view more</a><svg class="bi bi-arrow-right-circle ms-3" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
                     </svg></div>
                 </div>
@@ -428,18 +466,18 @@
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="py-7">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row g-0">
-            <div class="col-lg-5"><img class="w-100" src="assets/img/gallery/share.png" width="600" alt="..." /></div>
-            <div class="col-lg-5">
+            <div class="col-lg-6 order-1 order-lg-0"><img class="w-100 h-100" src="assets/img/gallery/share.png" width="600" alt="..." /></div>
+            <div class="col-lg-6">
               <div class="carousel slide" id="carouselShare" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row h-100">
                       <div class="col-12"><img class="w-100" src="assets/img/gallery/dubai.png" height="600" alt="..." />
                         <div class="py-4 ps-5">
-                          <h6 class="mb-2 text-1000">Share a trip</h6>
-                          <h2 class="mb-3 text-primary">Dubai</h2>
+                          <h4 class="mb-2 text-1000">Share a trip</h4>
+                          <h2 class="mb-3 text-primary fs-6">Dubai</h2>
                           <p class="fw-normal mb-0">Dubai Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.</p>
                         </div>
                       </div>
@@ -449,8 +487,8 @@
                     <div class="row h-100">
                       <div class="col-12"><img class="w-100" src="assets/img/gallery/cinnamon.png" height="600" alt="..." />
                         <div class="py-4 ps-5">
-                          <h6 class="mb-2 text-1000">Share a trip</h6>
-                          <h2 class="mb-3 text-primary">Maldives</h2>
+                          <h4 class="mb-2 text-1000">Share a trip</h4>
+                          <h2 class="mb-3 text-primary fs-6">Maldives</h2>
                           <p class="fw-normal mb-0">Maldives Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.</p>
                         </div>
                       </div>
@@ -460,8 +498,8 @@
                     <div class="row h-100">
                       <div class="col-12"><img class="w-100" src="assets/img/gallery/dhigu.png" height="600" alt="..." />
                         <div class="py-4 ps-5">
-                          <h6 class="mb-2 text-1000">Share a trip</h6>
-                          <h2 class="mb-3 text-primary">Maldives</h2>
+                          <h4 class="mb-2 text-1000">Share a trip</h4>
+                          <h2 class="mb-3 text-primary fs-6">Maldives</h2>
                           <p class="fw-normal mb-0">Maldives Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.</p>
                         </div>
                       </div>
@@ -471,22 +509,129 @@
                     <div class="row h-100">
                       <div class="col-12"><img class="w-100" src="assets/img/gallery/dubai.png" height="600" alt="..." />
                         <div class="py-4 ps-5">
-                          <h6 class="mb-2 text-1000">Share a trip</h6>
-                          <h2 class="mb-3 text-primary">Dubai</h2>
+                          <h4 class="mb-2 text-1000">Share a trip</h4>
+                          <h2 class="mb-3 text-primary fs-6">Dubai</h2>
                           <p class="fw-normal mb-0">Dubai Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row ps-5">
-                  <div class="col-auto position-relative z-index-2">
+                <div class="row ps-5 align-items-center">
+                  <div class="col-6 position-relative z-index-2">
                     <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
                       <li class="active" data-bs-target="#carouselShare" data-bs-slide-to="0"></li>
                       <li data-bs-target="#carouselShare" data-bs-slide-to="1"></li>
                       <li data-bs-target="#carouselShare" data-bs-slide-to="2"></li>
                       <li data-bs-target="#carouselShare" data-bs-slide-to="3"></li>
                     </ol>
+                  </div>
+                  <div class="col-6 position-relative z-index-2 text-end"><a class="btn btn-lg text-secondary" href="#" role="button">Read More<svg class="bi bi-arrow-right ms-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-7 overflow-hidden">
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-sm-6 col-md-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/sky-the-limit.png" height="375" alt="..." />
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4">
+                    <h3 class="text-white">Sky the Limit</h3>
+                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Manali</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
+                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/beyond-the-blues.png" height="375" alt="..." />
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4">
+                    <h3 class="text-white">Beyond the Blues</h3>
+                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Maldives</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
+                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-primary-gradient h-100 bg-offcanvas-right">
+                <div class="row g-0 justify-content-start">
+                  <div class="col-12">
+                    <div class="p-6 py-md-5 px-md-3 px-lg-4 py-lg-8 text-light"><i class="fas fa-gift fs-5 mb-3"></i>
+                      <h2 class="mb-3 text-light">popular Packages</h2>
+                      <p>Enjoy our pakages to the places our travellers <br class="d-none d-lg-block" />enjoy the most. Affordable, yet enjoyable. For <br class="d-none d-lg-block" />you, and your family.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/green.png" height="375" alt="..." />
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4">
+                    <h3 class="text-white">Within the Gren</h3>
+                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Phillipines</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
+                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/queens-gambit.png" height="375" alt="..." />
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4">
+                    <h3 class="text-white">Queens Gambit</h3>
+                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">London</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
+                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/canals.png" height="375" alt="..." />
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4">
+                    <h3 class="text-white">City of canals</h3>
+                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Maldives</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
+                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-8">
+              <div class="bg-secondary-gradient h-100">
+                <div class="row g-0 flex-center">
+                  <div class="col-xl-5">
+                    <div class="py-lg-8 px-4 text-light py-6">
+                      <p class="fs-1 ps-4">We have more packages to share with you. Just one click away!</p>
+                      <div class="mt-4"><a class="btn btn-lg text-light fs-1" href="#" role="button">Click to view more<svg class="bi bi-arrow-right-circle ms-3" xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/mountain-venture.png" height="375" alt="..." />
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4">
+                    <h3 class="text-white">Mountain Venture</h3>
+                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Maldives</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
+                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
                   </div>
                 </div>
               </div>
@@ -501,98 +646,452 @@
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="py-7">
-        <div class="container-fluid">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-lg-4 order-1"><img class="w-100" src="assets/img/gallery/bungee-jumping.png" height="750" alt="..." /></div>
+            <div class="col-lg-8">
+              <div class="carousel slide" id="carouselActivity" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row h-100">
+                      <div class="col-12"><img class="w-100" src="assets/img/gallery/activity.png" width="383" alt="..." />
+                        <div class="py-4">
+                          <h4 class="mb-2 text-1000">Engage in activities like</h4>
+                          <h2 class="mb-3 text-primary fs-6">Bungee Jumping</h2>
+                          <p class="fw-normal mb-0 pe-9">Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row h-100">
+                      <div class="col-12"><img class="w-100" src="assets/img/gallery/activity.png" width="383" alt="..." />
+                        <div class="py-4">
+                          <h4 class="mb-2 text-1000">Engage in activities like</h4>
+                          <h2 class="mb-3 text-primary fs-6">Bungee Jumping</h2>
+                          <p class="fw-normal mb-0 pe-9">Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="1000">
+                    <div class="row h-100">
+                      <div class="col-12"><img class="w-100" src="assets/img/gallery/activity.png" width="383" alt="..." />
+                        <div class="py-4">
+                          <h4 class="mb-2 text-1000">Engage in activities like</h4>
+                          <h2 class="mb-3 text-primary fs-6">Bungee Jumping</h2>
+                          <p class="fw-normal mb-0 pe-9">Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100">
+                      <div class="col-12"><img class="w-100" src="assets/img/gallery/activity.png" width="383" alt="..." />
+                        <div class="py-4">
+                          <h4 class="mb-2 text-1000">Engage in activities like</h4>
+                          <h2 class="mb-3 text-primary fs-6">Bungee Jumping</h2>
+                          <p class="fw-normal mb-0 pe-9">Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-6 position-relative z-index-2">
+                    <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                      <li class="active" data-bs-target="#carouselActivity" data-bs-slide-to="0"></li>
+                      <li data-bs-target="#carouselActivity" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselActivity" data-bs-slide-to="2"></li>
+                      <li data-bs-target="#carouselActivity" data-bs-slide-to="3"></li>
+                    </ol>
+                  </div>
+                  <div class="col-6 position-relative z-index-2 text-center"><a class="btn btn-lg text-secondary" href="#" role="button">Read More<svg class="bi bi-arrow-right ms-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-7">
+        <div class="container">
           <div class="row g-2">
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-2">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/sky-the-limit.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
-                  <div class="mt-auto px-4">
-                    <h3 class="text-white">Sky the Limit</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Manali</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
-                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/beyond-the-blues.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
-                  <div class="mt-auto px-4">
-                    <h3 class="text-white">Beyond the Blues</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Maldives</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
-                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4">
-              <div class="bg-primary-gradient h-100">
+            <div class="col-sm-6 col-md-4">
+              <div class="bg-primary-gradient h-100 d-flex align-items-end">
                 <div class="row g-0 justify-content-start">
-                  <div class="col-lg-9">
-                    <div class="p-6 py-md-5 px-md-3 px-lg-4 py-lg-8 text-light"><i class="fas fa-gift fs-5 mb-3"></i>
-                      <h2 class="mb-3 text-light">popular Packages</h2>
-                      <p>Enjoy our pakages to the places our travellers <br class="d-none d-lg-block" />enjoy the most. Affordable, yet enjoyable. For <br class="d-none d-lg-block" />you, and your family.</p>
+                  <div class="col-xl-9">
+                    <div class="p-6 px-md-3 px-lg-4 text-light"><i class="fas fa-hotel fs-5 mb-3"></i>
+                      <h2 class="mb-3 text-light">Explore our top Hotels</h2>
+                      <p>Save on your entire order by bundling tickets with any hotel. After you add your tickets to your cart, continue the Bundle it! process by selecting the perfect hotel room. </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-2">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/green.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
-                  <div class="mt-auto px-4">
-                    <h3 class="text-white">Within the Gren</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Phillipines</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
-                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+            <div class="col-sm-6 col-md-4">
+              <div class="row g-2">
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/Moon-hotel.png" height="375" alt="..." />
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4">
+                        <h3 class="text-white">Moon House Hotel</h3>
+                        <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Soi Petchburi 19, Bankok</span></div>
+                        <p class="mb-0 mt-3">Starts from </p>
+                        <h1 class="mb-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/blue-mosque-hotel.png" height="375" alt="..." />
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4">
+                        <h3 class="text-white">Blue Mosque Hotel</h3>
+                        <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Dismesi Sokak, Istanbul</span></div>
+                        <p class="mb-0 mt-3">Starts from </p>
+                        <h1 class="mb-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/queens-gambit.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
-                  <div class="mt-auto px-4">
-                    <h3 class="text-white">Queens Gambit</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">London</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
-                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+            <div class="col-sm-6 col-md-4">
+              <div class="row g-2">
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/hotel-royal.png" height="375" alt="..." />
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4">
+                        <h3 class="text-white">Hotel Royal</h3>
+                        <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Kedewatan, Bali</span></div>
+                        <p class="mb-0 mt-3">Starts from </p>
+                        <h1 class="mb-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/boutique-hotel.png" height="375" alt="..." />
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4">
+                        <h3 class="text-white">The Rin Boutique Hotel</h3>
+                        <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Bang Lamung, Pattaya</span></div>
+                        <p class="mb-0 mt-3">Starts from </p>
+                        <h1 class="mb-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/canals.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
-                  <div class="mt-auto px-4">
-                    <h3 class="text-white">City of canals</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Maldives</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
-                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-8 col-lg-6 offset-lg-2">
-              <div class="bg-secondary-gradient h-100">
-                <div class="row g-0 flex-center">
-                  <div class="col-lg-5">
-                    <div class="py-lg-8 px-4 text-light py-6">
-                      <p class="fs-1 ps-4">We have more packages to share with you. Just one click away!</p>
-                      <div class="mt-4"><a class="btn btn-lg text-light fs-2" href="#" role="button">Click to view more</a><svg class="bi bi-arrow-right-circle" xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="currentColor" viewBox="0 0 16 16">
+            <div class="col-sm-6 col-md-8">
+              <div class="bg-secondary-gradient h-100 d-flex align-items-center">
+                <div class="text-light py-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="fs-1 ps-4">Don’t see a place according to your choice? Don’t worry. We have more for you.</p>
+                    </div>
+                    <div class="col-6"><a class="btn btn-lg text-light fs-1" href="#" role="button">Click to view more<svg class="bi bi-arrow-right-circle ms-3" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
-                        </svg></div>
-                    </div>
+                        </svg></a></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/mountain-venture.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
-                  <div class="mt-auto px-4">
-                    <h3 class="text-white">Mountain Venture</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-3">Maldives</span><span class="text-light fs--1 me-1"><i class="fas fa-calendar"></i></span><span class="text-light">4 days</span></div>
-                    <h1 class="my-2 text-light fw-bolder fs-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+        <div class="container">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Travel Blogs</h5>
+            </div>
+            <div class="col-12">
+              <div class="carousel slide" id="carouselBlogs" data-bs-ride="carousel">
+                <div class="carousel-inner pb-sm-5">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row h-100 align-items-center g-2">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">As we all know our travels are not always with other people. Sometimes we have to travel...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-2.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-3.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">Looking for a good place to stay in your trip?</h5>
+                            <p class="text-900">Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <div class="row h-100 align-items-center g-2">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">As we all know our travels are not always with other people. Sometimes we have to travel...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-2.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-3.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">Looking for a good place to stay in your trip?</h5>
+                            <p class="text-900">Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row h-100 align-items-center g-2">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">As we all know our travels are not always with other people. Sometimes we have to travel...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-2.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-3.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">Looking for a good place to stay in your trip?</h5>
+                            <p class="text-900">Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100 align-items-center g-2">
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">As we all know our travels are not always with other people. Sometimes we have to travel...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-2.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">10 ways to pack before a solo trip</h5>
+                            <p class="text-900">How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-3.png" alt="..." />
+                          <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
+                          <div class="card-body px-3 py-4">
+                            <h5 class="fw-bold text-1000">Looking for a good place to stay in your trip?</h5>
+                            <p class="text-900">Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row"><button class="carousel-control-prev" type="button" data-bs-target="#carouselBlogs" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselBlogs" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next                                    </span></button></div>
+                </div>
+                <div class="row flex-center">
+                  <div class="col-auto position-relative z-index-2">
+                    <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                      <li class="active" data-bs-target="#carouselBlogs" data-bs-slide-to="0"></li>
+                      <li data-bs-target="#carouselBlogs" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselBlogs" data-bs-slide-to="2"></li>
+                      <li data-bs-target="#carouselBlogs" data-bs-slide-to="3"></li>
+                    </ol>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Cheapest Flights in Popular Routs</h5>
+            </div>
+          </div>
+          <div class="row g-0 flex-center">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#240D8C; min-height:230px; ">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#3011BB; min-height:230px;">
+                <h5 class="text-light">Dhaka - Sylhet</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4914DC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#6213D2; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4611BC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#7013CE; min-height:230px;">
+                <h5 class="text-light">Dhaka - Sylhet</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4611BC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#6213D2; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#240D8C; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4914DC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Sylhet</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#3011BB; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4611BC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <section>
+        <div class="bg-holder" style="background-image:url(assets/img/gallery/cta-b.png);background-position:center;background-size:cover;"></div>
+        <!--/.bg-holder-->
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-lg-6 text-center"><img class="mb-5 mb-lg-0" src="assets/img/gallery/cta-mobile.png" alt="..." /></div>
+            <div class="col-lg-6 text-center">
+              <h1 class="fs-6 pe-xxl-10">Get the app</h1>
+              <div class="mt-4 pe-xxl-10"><img class="me-3" src="assets/img/gallery/google-play.png" width="170" alt="..." /><img src="assets/img/gallery/app-store.png" width="170" alt="..." /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-lg-6">
+              <div class="py-7"><img class="d-inline-block" src="assets/img/gallery/logo.png" width="50" alt="logo" /><span class="fw-bold fs-4 text-primary ms-2">voyage</span>
+                <ul class="list-unstyled mt-4">
+                  <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">News</a></li>
+                  <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Terms &amp; Conditions</a></li>
+                  <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Privacy</a></li>
+                  <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">About Us</a></li>
+                  <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-8 col-lg-6 bg-primary-gradient bg-offcanvas-right">
+              <div class="p-3 py-7 p-md-7">
+                <p class="text-light"><i class="fas fa-phone-alt me-3"></i><span class="text-light">+3930219390</span></p>
+                <p class="text-light"><i class="fas fa-envelope me-3"></i><span class="text-light">something@gmail.com</span></p>
+                <p class="text-light"><i class="fas fa-map-marker-alt me-3"></i><span class="text-light lh-lg">333, Lorem Street, Albania, Alifornia<br/>United States of America</span></p>
+                <div class="mt-6"> <i class="fab fa-facebook text-light fs-4 me-3"></i><i class="fab fa-twitter text-light fs-4 me-3"></i><i class="fab fa-instagram text-light fs-4 me-3"></i></div>
               </div>
             </div>
           </div>

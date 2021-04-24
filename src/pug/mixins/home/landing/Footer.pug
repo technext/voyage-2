@@ -5,17 +5,17 @@ mixin FooterList(...items)
         =item
 
 mixin Footer
-  +Section('container-fluid').py-0
-    .row.justify-content-center
-      .col-5.offset-lg-1
-        .p-7
+  +Section.py-0.overflow-hidden
+    .row
+      .col-6.col-sm-4.col-lg-6
+        .py-7
           img.d-inline-block(src=`${CWD}assets/img/gallery/logo.png` width='50' alt='logo')
           span.fw-bold.fs-4.text-primary.ms-2 voyage
           ul.list-unstyled.mt-4
             +FooterList('News','Terms & Conditions','Privacy','About Us','FAQs')
 
-      .col-6.bg-primary-gradient
-        .p-7
+      .col-6.col-8.col-lg-6.bg-primary-gradient.bg-offcanvas-right
+        .p-3.py-7.p-md-7
           p.text-light
             i.fas.fa-phone-alt.me-3
             span.text-light +3930219390

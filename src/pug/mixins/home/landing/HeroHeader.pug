@@ -1,9 +1,9 @@
 mixin HeroHeader
   section.mt-7
-    +Background({ image: `${CWD}assets/img/gallery/hero-section-1.png`, attrs: { style: {} }, className: 'w-50 bg-right' })
+    +Background({ image: `${CWD}assets/img/gallery/hero-section-1.png`, attrs: { style: {} }, className: 'w-50 bg-right d-none d-lg-block' })
     .container 
       .row
-        .col-md-6.py-7
+        .col-lg-6.py-7
           h1.display-3.text-1000.fw-normal Plan a tour today
           h1.display-3.text-primary.fw-bold Just How You Want
           .pt-7
@@ -31,14 +31,55 @@ mixin HeroHeader
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-map-marker-alt 
                     .col-md-6
-                      label.form-label.visually-hidden(for='inputState') State
-                      input.form-control.input-box.form-voyage-control#inputAddress2(type='date' placeholder='3 Sep,2021')
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputDate1') Date 1
+                        input.form-control.input-box.form-voyage-control#inputdate1(type='date' value='3 Sep,2021')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-calendar
+                    .col-md-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputDate2') Date 2
+                        input.form-control.input-box.form-voyage-control#inputDate2(type='date' value='3 Sep,2021')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-calendar
+                    .col-md-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputperson') Person
+                        select#inputState.form-select.form-voyage-select.input-box
+                          option(selected) 2 Adults
+                          option 2 Adults 1 children
+                          option 2 Adults 2 children
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                            i.fas.fa-user 
+                    .col-12.d-grid
+                      button.btn.btn-secondary(type='submit') Search Packages
+                .tab-pane.fade#nav-profile(role='tabpanel' aria-labelledby='nav-profile-tab') 
+                  form.row.g-4.mt-5
+                    .col-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputAddress1') Address 1
+                        input.form-control.input-box.form-voyage-control#inputAddress1(type='text' placeholder='From where')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-map-marker-alt
+                    .col-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputAddress2') Address 2
+                        input.form-control.input-box.form-voyage-control#inputAddress2(type='text' placeholder='To where')  
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-map-marker-alt 
+                    .col-md-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputDate1') Date 1
+                        input.form-control.input-box.form-voyage-control#inputdate1(type='date' value='3 Sep,2021')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-calendar
                   
                     .col-md-6
-                      label.form-label.visually-hidden(for='inputState') State
-                      select#inputState.form-select.form-voyage-select
-                        option(selected) 23 Sep,2021
-                        option ...
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputDate2') Date 2
+                        input.form-control.input-box.form-voyage-control#inputDate2(type='date' value='3 Sep,2021')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-calendar
                     .col-md-6
                       .input-group-icon
                         label.form-label.visually-hidden(for='inputState') State
@@ -50,15 +91,33 @@ mixin HeroHeader
                             i.fas.fa-user 
                     .col-12.d-grid
                       button.btn.btn-secondary(type='submit') Search Packages
-                .tab-pane.fade#nav-profile(role='tabpanel' aria-labelledby='nav-profile-tab') ...
-                .tab-pane.fade#nav-contact(role='tabpanel' aria-labelledby='nav-contact-tab') ...
-        .col-md-6.px-0
-          //- img.img-fluid.mb-4.h-100(src=`${CWD}assets/img/gallery/hero-section-1.png`  alt='...')  
+                .tab-pane.fade#nav-contact(role='tabpanel' aria-labelledby='nav-contact-tab') 
+                  form.row.g-4.mt-5
+                    .col-md-6
+                      label.form-label.visually-hidden(for='inputState1') State
+                      input.form-control.input-box.form-voyage-control#inputdate1(type='date' placeholder='3 Sep,2021')
+                  
+                    .col-md-6
+                      label.form-label.visually-hidden(for='inputState2') State
+                      input.form-control.input-box.form-voyage-control#inputDate2(type='date' placeholder='3 Sep,2021')
+                    .col-md-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputState') State
+                        select#inputState.form-select.form-voyage-select.input-box
+                          option(selected) 2 Adults
+                          option 2 Adults 1 children
+                          option 2 Adults 2 children
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                            i.fas.fa-user 
+                    .col-12.d-grid
+                      button.btn.btn-secondary(type='submit') Search Packages
+       
+         
   +Section.py-0.overflow-hidden      
     .row
-      .col-md-6.px-0
+      .col-md-12.col-lg-6.px-0
         img.img-fluid.order-md-0.mb-4.h-100(src=`${CWD}assets/img/gallery/hero-section-2.png`  alt='...')    
-      .col-md-6.px-0.bg-primary-gradient.bg-offcanvas-right
+      .col-md-12.col-lg-6.px-0.bg-primary-gradient.bg-offcanvas-right
         .mx-6.mx-xl-8.my-8
           .align-items-center.d-block.d-flex.mb-5
             img(src=`${CWD}assets/img/icons/locations.png`  alt='...').img-fluid.me-3.me-md-2.me-lg-4

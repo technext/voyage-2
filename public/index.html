@@ -65,13 +65,13 @@
         </div>
       </nav>
       <section class="mt-7">
-        <div class="bg-holder w-50 bg-right" style="background-image:url(assets/img/gallery/hero-section-1.png);">
+        <div class="bg-holder w-50 bg-right d-none d-lg-block" style="background-image:url(assets/img/gallery/hero-section-1.png);">
         </div>
         <!--/.bg-holder-->
 
         <div class="container">
           <div class="row">
-            <div class="col-md-6 py-7">
+            <div class="col-lg-6 py-7">
               <h1 class="display-3 text-1000 fw-normal">Plan a tour today</h1>
               <h1 class="display-3 text-primary fw-bold">Just How You Want</h1>
               <div class="pt-7">
@@ -97,15 +97,57 @@
                           </div>
                         </div>
                         <div class="col-md-6">
-                          <label class="form-label visually-hidden" for="inputState">State</label>
-                          <input class="form-control input-box form-voyage-control" id="inputAddress2" type="date" placeholder="3 Sep,2021" />
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputDate1">Date 1</label>
+                            <input class="form-control input-box form-voyage-control" id="inputdate1" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                          </div>
                         </div>
                         <div class="col-md-6">
-                          <label class="form-label visually-hidden" for="inputState">State</label>
-                          <select class="form-select form-voyage-select" id="inputState">
-                            <option selected="selected">23 Sep,2021</option>
-                            <option>...</option>
-                          </select>
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputDate2">Date 2</label>
+                            <input class="form-control input-box form-voyage-control" id="inputDate2" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputperson">Person</label>
+                            <select class="form-select form-voyage-select input-box" id="inputState">
+                              <option selected="selected">2 Adults</option>
+                              <option>2 Adults 1 children</option>
+                              <option>2 Adults 2 children</option>
+                            </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-12 d-grid">
+                          <button class="btn btn-secondary" type="submit">Search Packages</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <form class="row g-4 mt-5">
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddress1">Address 1</label>
+                            <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddress2">Address 2</label>
+                            <input class="form-control input-box form-voyage-control" id="inputAddress2" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputDate1">Date 1</label>
+                            <input class="form-control input-box form-voyage-control" id="inputdate1" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputDate2">Date 2</label>
+                            <input class="form-control input-box form-voyage-control" id="inputDate2" type="date" value="3 Sep,2021" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                          </div>
                         </div>
                         <div class="col-md-6">
                           <div class="input-group-icon">
@@ -122,13 +164,35 @@
                         </div>
                       </form>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                      <form class="row g-4 mt-5">
+                        <div class="col-md-6">
+                          <label class="form-label visually-hidden" for="inputState1">State</label>
+                          <input class="form-control input-box form-voyage-control" id="inputdate1" type="date" placeholder="3 Sep,2021" />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label visually-hidden" for="inputState2">State</label>
+                          <input class="form-control input-box form-voyage-control" id="inputDate2" type="date" placeholder="3 Sep,2021" />
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputState">State</label>
+                            <select class="form-select form-voyage-select input-box" id="inputState">
+                              <option selected="selected">2 Adults</option>
+                              <option>2 Adults 1 children</option>
+                              <option>2 Adults 2 children</option>
+                            </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-12 d-grid">
+                          <button class="btn btn-secondary" type="submit">Search Packages</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </nav>
               </div>
             </div>
-            <div class="col-md-6 px-0"></div>
           </div>
         </div>
       </section>
@@ -140,8 +204,8 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
-            <div class="col-md-6 px-0 bg-primary-gradient bg-offcanvas-right">
+            <div class="col-md-12 col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
+            <div class="col-md-12 col-lg-6 px-0 bg-primary-gradient bg-offcanvas-right">
               <div class="mx-6 mx-xl-8 my-8">
                 <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/locations.png" alt="..." />
                   <div class="flex-1 align-items-center pt-2">
@@ -161,7 +225,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -178,7 +243,7 @@
               <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
                 <div class="carousel-inner pb-sm-5">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -221,7 +286,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="5000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -264,7 +329,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -307,7 +372,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/maldives.png" alt="..." />
                           <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-dark-gradient">
@@ -466,7 +531,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -547,7 +613,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -558,11 +625,11 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-7">
+      <section class="py-7 overflow-hidden">
 
-        <div class="container-fluid">
+        <div class="container">
           <div class="row g-2">
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-2">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/sky-the-limit.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -573,7 +640,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/beyond-the-blues.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -584,10 +651,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-4">
-              <div class="bg-primary-gradient h-100">
+            <div class="col-12 col-md-4">
+              <div class="bg-primary-gradient h-100 bg-offcanvas-right">
                 <div class="row g-0 justify-content-start">
-                  <div class="col-lg-9">
+                  <div class="col-12">
                     <div class="p-6 py-md-5 px-md-3 px-lg-4 py-lg-8 text-light"><i class="fas fa-gift fs-5 mb-3"></i>
                       <h2 class="mb-3 text-light">popular Packages</h2>
                       <p>Enjoy our pakages to the places our travellers <br class="d-none d-lg-block" />enjoy the most. Affordable, yet enjoyable. For <br class="d-none d-lg-block" />you, and your family.</p>
@@ -596,7 +663,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-2">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/green.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -607,7 +674,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/queens-gambit.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -618,7 +685,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/canals.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -629,7 +696,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-8 col-lg-6 offset-lg-2">
+            <div class="col-sm-6 col-md-8">
               <div class="bg-secondary-gradient h-100">
                 <div class="row g-0 flex-center">
                   <div class="col-xl-5">
@@ -644,7 +711,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/mountain-venture.png" height="375" alt="..." />
                 <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
                   <div class="mt-auto px-4">
@@ -656,7 +723,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -669,10 +737,10 @@
       <!-- <section> begin ============================-->
       <section class="py-7">
 
-        <div class="container-fluid">
+        <div class="container">
           <div class="row g-0">
             <div class="col-lg-4 order-1"><img class="w-100" src="assets/img/gallery/bungee-jumping.png" height="750" alt="..." /></div>
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-8">
               <div class="carousel slide" id="carouselActivity" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
@@ -737,7 +805,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -750,9 +819,9 @@
       <!-- <section> begin ============================-->
       <section class="py-7">
 
-        <div class="container-fluid">
+        <div class="container">
           <div class="row g-2">
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-1">
+            <div class="col-sm-6 col-md-4">
               <div class="bg-primary-gradient h-100 d-flex align-items-end">
                 <div class="row g-0 justify-content-start">
                   <div class="col-xl-9">
@@ -764,7 +833,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="row g-2">
                 <div class="col-12">
                   <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/Moon-hotel.png" height="375" alt="..." />
@@ -792,7 +861,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4">
               <div class="row g-2">
                 <div class="col-12">
                   <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/hotel-royal.png" height="375" alt="..." />
@@ -820,7 +889,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-8 offset-lg-1">
+            <div class="col-sm-6 col-md-8">
               <div class="bg-secondary-gradient h-100 d-flex align-items-center">
                 <div class="text-light py-6">
                   <div class="row">
@@ -836,7 +905,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -858,7 +928,7 @@
               <div class="carousel slide" id="carouselBlogs" data-bs-ride="carousel">
                 <div class="carousel-inner pb-sm-5">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
                           <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
@@ -889,7 +959,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="5000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
                           <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
@@ -920,7 +990,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
                           <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
@@ -951,7 +1021,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row h-100 align-items-center">
+                    <div class="row h-100 align-items-center g-2">
                       <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card card-span h-100 text-white"><img class="img-fluid h-100" src="assets/img/gallery/blog-1.png" alt="..." />
                           <div class="card-img-overlay d-flex flex-coloumn flex-center"></div>
@@ -999,7 +1069,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -1019,80 +1090,81 @@
             </div>
           </div>
           <div class="row g-0 flex-center">
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#240D8C">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#240D8C; min-height:230px; ">
                 <h5 class="text-light">Dhaka - Chittagong</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#3011BB">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#3011BB; min-height:230px;">
                 <h5 class="text-light">Dhaka - Sylhet</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#4914DC">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4914DC; min-height:230px;">
                 <h5 class="text-light">Dhaka - Chittagong</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#6213D2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#6213D2; min-height:230px;">
                 <h5 class="text-light">Dhaka - Chittagong</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#4611BC">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4611BC; min-height:230px;">
                 <h5 class="text-light">Dhaka - Coxs Bazar</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#7013CE">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#7013CE; min-height:230px;">
                 <h5 class="text-light">Dhaka - Sylhet</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#4611BC">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4611BC; min-height:230px;">
                 <h5 class="text-light">Dhaka - Coxs Bazar</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#6213D2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#6213D2; min-height:230px;">
                 <h5 class="text-light">Dhaka - Chittagong</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#240D8C">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#240D8C; min-height:230px;">
                 <h5 class="text-light">Dhaka - Coxs Bazar</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#4914DC">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4914DC; min-height:230px;">
                 <h5 class="text-light">Dhaka - Sylhet</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#3011BB">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#3011BB; min-height:230px;">
                 <h5 class="text-light">Dhaka - Chittagong</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
-            <div class="col-auto col-xl-2">
-              <div class="p-3 py-6" style="background-color:#4611BC">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color:#4611BC; min-height:230px;">
                 <h5 class="text-light">Dhaka - Coxs Bazar</h5>
-                <h6 class="text-light fw-normal">From $100</h6><i class="fas fa-arrow-right text-light"></i>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i>
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -1104,12 +1176,12 @@
         </div>
         <!--/.bg-holder-->
 
-        <div class="container-fluid">
+        <div class="container">
           <div class="row flex-center">
-            <div class="col-lg-5 text-center"><img class="mb-5 mb-lg-0" src="assets/img/gallery/cta-mobile.png" alt="..." /></div>
-            <div class="col-lg-5 text-center">
+            <div class="col-lg-6 text-center"><img class="mb-5 mb-lg-0" src="assets/img/gallery/cta-mobile.png" alt="..." /></div>
+            <div class="col-lg-6 text-center">
               <h1 class="fs-6 pe-xxl-10">Get the app</h1>
-              <div class="mt-4 pe-xxl-10"><img class="me-3" src="assets/img/gallery/google-play.png" alt="..." /><img src="assets/img/gallery/app-store.png" alt="..." /></div>
+              <div class="mt-4 pe-xxl-10"><img class="me-3" src="assets/img/gallery/google-play.png" width="170" alt="..." /><img src="assets/img/gallery/app-store.png" width="170" alt="..." /></div>
             </div>
           </div>
         </div>
@@ -1118,12 +1190,12 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-0">
+      <section class="py-0 overflow-hidden">
 
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-5 offset-lg-1">
-              <div class="p-7"><img class="d-inline-block" src="assets/img/gallery/logo.png" width="50" alt="logo" /><span class="fw-bold fs-4 text-primary ms-2">voyage</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-lg-6">
+              <div class="py-7"><img class="d-inline-block" src="assets/img/gallery/logo.png" width="50" alt="logo" /><span class="fw-bold fs-4 text-primary ms-2">voyage</span>
                 <ul class="list-unstyled mt-4">
                   <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">News</a></li>
                   <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Terms &amp; Conditions</a></li>
@@ -1133,8 +1205,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-6 bg-primary-gradient">
-              <div class="p-7">
+            <div class="col-6 col-8 col-lg-6 bg-primary-gradient bg-offcanvas-right">
+              <div class="p-3 py-7 p-md-7">
                 <p class="text-light"><i class="fas fa-phone-alt me-3"></i><span class="text-light">+3930219390</span></p>
                 <p class="text-light"><i class="fas fa-envelope me-3"></i><span class="text-light">something@gmail.com</span></p>
                 <p class="text-light"><i class="fas fa-map-marker-alt me-3"></i><span class="text-light lh-lg">333, Lorem Street, Albania, Alifornia<br/>United States of America</span></p>
@@ -1142,7 +1214,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div>
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->

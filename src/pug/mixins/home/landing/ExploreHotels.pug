@@ -55,11 +55,10 @@ mixin HotelsItem(config)
 					span=config.price
 					span.text-light.fs--1.fw-normal /Per person
 
-
 mixin ExploreHotels
-	+Section('container-fluid').py-7
+	+Section.py-7
 		.row.g-2
-			.col-sm-6.col-md-4.col-lg-3.offset-lg-1
+			.col-sm-6.col-md-4
 				.bg-primary-gradient.h-100.d-flex.align-items-end
 					.row.g-0.justify-content-start
 						.col-xl-9
@@ -67,19 +66,19 @@ mixin ExploreHotels
 								i.fas.fa-hotel.fs-5.mb-3
 								h2.mb-3.text-light Explore our top Hotels
 								p Save on your entire order by bundling tickets with any hotel. After you add your tickets to your cart, continue the Bundle it! process by selecting the perfect hotel room. 
-			.col-sm-6.col-md-4.col-lg-3
+			.col-sm-6.col-md-4
 				.row.g-2
 					.col-12 
 						+HotelsItem(hotels[0])
 					.col-12 
 						+HotelsItem(hotels[1])
-			.col-sm-6.col-md-4.col-lg-3
+			.col-sm-6.col-md-4
 				.row.g-2 
 					.col-12 
 						+HotelsItem(hotels[2])
 					.col-12 
 						+HotelsItem(hotels[3])
-			.col-sm-6.col-md-8.offset-lg-1
+			.col-sm-6.col-md-8
 				.bg-secondary-gradient.h-100.d-flex.align-items-center
 					.text-light.py-6
 						.row 
