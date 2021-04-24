@@ -3,24 +3,18 @@ append variables
     var blogs= [
       {
         image:'blog-1.png',
-        userImage:'author-1.png',
-        name:'John Oliver',
         time:'5 min Read',
         title:'10 ways to pack before a solo trip',
         text:'As we all know our travels are not always with other people. Sometimes we have to travel...', 
       },
       {
         image:'blog-2.png',
-        userImage:'author-2.png',
-        name:'Emman Watson',
         time:'5 min Read',
         title:'10 ways to pack before a solo trip',
         text:'How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...',
       },
       {
         image:'blog-3.png',
-        userImage:'author-3.png',
-        name:'Brad Hughes',
         time:'5 min Read',
         title:'Looking for a good place to stay in your trip?',
         text:'Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...',
@@ -33,11 +27,10 @@ mixin BlogItems(config)
     .card.card-span.h-100.text-white
       img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt='...').h-100
       .card-img-overlay.d-flex.flex-coloumn.flex-center
-        //- img.img-fluid(src=`${CWD}assets/img/gallery/${config.userImage}` width='100' alt='...')
       .card-body.px-3.py-4
         h5.fw-bold.text-1000=config.title 
         p.text-900=config.text
-        
+      a.stretched-link(href='#!')  
 
 mixin TravelBlogs
   +Section

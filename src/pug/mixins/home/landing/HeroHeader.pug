@@ -1,12 +1,12 @@
 mixin HeroHeader
-  section.mt-7
+  section.mt-7.py-0
     +Background({ image: `${CWD}assets/img/gallery/hero-section-1.png`, attrs: { style: {} }, className: 'w-50 bg-right d-none d-lg-block' })
     .container 
       .row
-        .col-lg-6.py-7
+        .col-lg-6.py-5.py-xl-5.py-xxl-8
           h1.display-3.text-1000.fw-normal Plan a tour today
           h1.display-3.text-primary.fw-bold Just How You Want
-          .pt-7
+          .pt-5
             nav
               .nav.nav-tabs.voyage-tabs#nav-tab(role='tablist')
                 button.nav-link.active#nav-home-tab(data-bs-toggle='tab' data-bs-target='#nav-home' type='button' role='tab' aria-controls='nav-home' aria-selected='true')
@@ -49,7 +49,7 @@ mixin HeroHeader
                           option 2 Adults 2 children
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                             i.fas.fa-user 
-                    .col-12.d-grid.mt-7
+                    .col-12.d-grid.mt-6
                       button.btn.btn-secondary(type='submit') Search Packages
                 .tab-pane.fade#nav-profile(role='tabpanel' aria-labelledby='nav-profile-tab') 
                   form.row.g-4.mt-5
@@ -85,7 +85,7 @@ mixin HeroHeader
                           option 2 Adults 2 children
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                             i.fas.fa-user 
-                    .col-12.d-grid.mt-7
+                    .col-12.d-grid.mt-6
                       button.btn.btn-secondary(type='submit') Search Packages
                 .tab-pane.fade#nav-contact(role='tabpanel' aria-labelledby='nav-contact-tab') 
                   form.row.g-4.mt-5
@@ -108,14 +108,14 @@ mixin HeroHeader
                           option 2 Adults 2 children
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                             i.fas.fa-user 
-                    .col-12.d-grid.mt-7
+                    .col-12.d-grid.mt-6
                       button.btn.btn-secondary(type='submit') Search Packages
        
          
   +Section.py-0.overflow-hidden      
     .row
       .col-lg-6.px-0
-        img.img-fluid.order-md-0.mb-4.w-100.h-100(src=`${CWD}assets/img/gallery/hero-section-2.png`  alt='...')    
+        img.img-fluid.order-md-0.mb-4.h-100.fit-cover(src=`${CWD}assets/img/gallery/hero-section-2.png`  alt='...')    
       .col-lg-6.px-0.bg-primary-gradient.bg-offcanvas-right
         .mx-6.mx-xl-8.my-8
           .align-items-center.d-block.d-flex.mb-5
