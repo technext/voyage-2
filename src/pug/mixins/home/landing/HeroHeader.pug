@@ -32,92 +32,91 @@ mixin HeroHeader
                           i.fas.fa-map-marker-alt 
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputDate1') Date 1
-                        input.form-control.input-box.form-voyage-control#inputdate1(type='date' value='3 Sep,2021')
+                        input.form-control.input-box.form-voyage-control#inputdateOne(type='date')
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-calendar
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputDate2') Date 2
-                        input.form-control.input-box.form-voyage-control#inputDate2(type='date' value='3 Sep,2021')
+                        input.form-control.input-box.form-voyage-control#inputDateTwo(type='date')
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-calendar
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputperson') Person
-                        select#inputState.form-select.form-voyage-select.input-box
+                        label.form-label.visually-hidden(for='inputPersonOne') Person
+                        select#inputPersonOne.form-select.form-voyage-select.input-box
                           option(selected) 2 Adults
                           option 2 Adults 1 children
                           option 2 Adults 2 children
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                             i.fas.fa-user 
-                    .col-12.d-grid
+                    .col-12.d-grid.mt-7
                       button.btn.btn-secondary(type='submit') Search Packages
                 .tab-pane.fade#nav-profile(role='tabpanel' aria-labelledby='nav-profile-tab') 
                   form.row.g-4.mt-5
                     .col-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputAddress1') Address 1
-                        input.form-control.input-box.form-voyage-control#inputAddress1(type='text' placeholder='From where')
+                        label.form-label.visually-hidden(for='inputAddressThree') Address 1
+                        input.form-control.input-box.form-voyage-control#inputAddressThree(type='text' placeholder='From where')
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-map-marker-alt
                     .col-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputAddress2') Address 2
-                        input.form-control.input-box.form-voyage-control#inputAddress2(type='text' placeholder='To where')  
+                        label.form-label.visually-hidden(for='inputAddressFour') Address 2
+                        input.form-control.input-box.form-voyage-control#inputAddressFour(type='text' placeholder='To where')  
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-map-marker-alt 
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputDate1') Date 1
-                        input.form-control.input-box.form-voyage-control#inputdate1(type='date' value='3 Sep,2021')
+                        input.form-control.input-box.form-voyage-control#inputDateThree(type='date')
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-calendar
                   
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputDate2') Date 2
-                        input.form-control.input-box.form-voyage-control#inputDate2(type='date' value='3 Sep,2021')
+                        input.form-control.input-box.form-voyage-control#inputDateFour(type='date')
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                           i.fas.fa-calendar
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputState') State
-                        select#inputState.form-select.form-voyage-select.input-box
+                        label.form-label.visually-hidden(for='inputPeopleTwo') People
+                        select#inputPeopleTwo.form-select.form-voyage-select.input-box
                           option(selected) 2 Adults
                           option 2 Adults 1 children
                           option 2 Adults 2 children
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                             i.fas.fa-user 
-                    .col-12.d-grid
+                    .col-12.d-grid.mt-7
                       button.btn.btn-secondary(type='submit') Search Packages
                 .tab-pane.fade#nav-contact(role='tabpanel' aria-labelledby='nav-contact-tab') 
                   form.row.g-4.mt-5
                     .col-md-6
-                      label.form-label.visually-hidden(for='inputState1') State
-                      input.form-control.input-box.form-voyage-control#inputdate1(type='date' placeholder='3 Sep,2021')
-                  
-                    .col-md-6
-                      label.form-label.visually-hidden(for='inputState2') State
-                      input.form-control.input-box.form-voyage-control#inputDate2(type='date' placeholder='3 Sep,2021')
+                      .input-group-icon
+                        input.form-control.input-box.form-voyage-control#inputDateFive(type='date')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-calendar
                     .col-md-6
                       .input-group-icon
-                        label.form-label.visually-hidden(for='inputState') State
-                        select#inputState.form-select.form-voyage-select.input-box
+                        input.form-control.input-box.form-voyage-control#inputDateSix(type='date')
+                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                          i.fas.fa-calendar
+                    .col-md-6
+                      .input-group-icon
+                        label.form-label.visually-hidden(for='inputPeopleThree') Person
+                        select#inputPeopleThree.form-select.form-voyage-select.input-box
                           option(selected) 2 Adults
                           option 2 Adults 1 children
                           option 2 Adults 2 children
                         span.nav-link-icon.text-800.fs--1.input-box-icon
                             i.fas.fa-user 
-                    .col-12.d-grid
+                    .col-12.d-grid.mt-7
                       button.btn.btn-secondary(type='submit') Search Packages
        
          
   +Section.py-0.overflow-hidden      
     .row
-      .col-md-12.col-lg-6.px-0
-        img.img-fluid.order-md-0.mb-4.h-100(src=`${CWD}assets/img/gallery/hero-section-2.png`  alt='...')    
-      .col-md-12.col-lg-6.px-0.bg-primary-gradient.bg-offcanvas-right
+      .col-lg-6.px-0
+        img.img-fluid.order-md-0.mb-4.w-100.h-100(src=`${CWD}assets/img/gallery/hero-section-2.png`  alt='...')    
+      .col-lg-6.px-0.bg-primary-gradient.bg-offcanvas-right
         .mx-6.mx-xl-8.my-8
           .align-items-center.d-block.d-flex.mb-5
             img(src=`${CWD}assets/img/icons/locations.png`  alt='...').img-fluid.me-3.me-md-2.me-lg-4
