@@ -14,7 +14,7 @@ append variables
       },
       {
         image:'cinnamon.png',
-        title:'Cinnamon Dhonveli: The sunny side of life at cinnamon dhonveli',
+        title:'Cinnamon Dhonveli: The sunny side of life ',
         time:'20:04:32:21',
         type:'trending',
         prevPrice:'$300',
@@ -39,10 +39,10 @@ append variables
 
 
 mixin Items(config)
-   .col-md-4.mb-3.mb-md-0
+   .col-md-4.mb-3.mb-md-0.h-100
     .card.card-span.h-100.text-white
       img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt='...').h-100
-      .card-img-overlay.ps-0.d-flex.flex-column.justify-content-between.bg-dark-gradient
+      .card-img-overlay.ps-0
         .pt-3
           span.badge.bg-primary.ms-3.me-1
             i.fas.fa-clock.me-1
@@ -52,15 +52,15 @@ mixin Items(config)
             span=config.type
             i.fas.fa-bolt.ms-1     
       .card-body.ps-0 
-        h5.fw-bold.text-1000=config.title 
+        h5.fw-bold.text-1000.mb-4.text-truncate=config.title 
         .d-flex.align-items-center.justify-content-start
-          span.text-800.fs--1.me-1
+          span.text-800.fs--1.me-2
             i.fas.fa-map-marker-alt
           span.text-900.me-3=config.country
-          span.text-800.fs--1.me-1
+          span.text-800.fs--1.me-2
             i.fas.fa-calendar
           span.text-900=config.days
-        p.text-decoration-line-through.text-900.mt-3=config.prevPrice 
+        p.text-decoration-line-through.text-900.mt-3.mb-0=config.prevPrice 
         h1.mb-3.text-primary.fw-bolder.fs-4
           span=config.price
           span.text-900.fs--1.fw-normal /Per person
@@ -68,14 +68,14 @@ mixin Items(config)
           i.fas.fa-tag.text-secondary.fs--1.me-1
           span.text-secondary.fw-normal.fs-1=config.discount 
 mixin FlashDeals
-  section.py-5#testimonial
+  section#testimonial
     .container
       .row.h-100
         .col-lg-7.mx-auto.text-center.mb-6
           h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Flash Deals
         .col-12
           #carouselTestimonials.carousel.slide(data-bs-ride='carousel')
-            .carousel-inner.pb-sm-5
+            .carousel-inner
               .carousel-item.active(data-bs-interval='10000')
                 .row.h-100.align-items-center.g-2                
                   +Items(testimonials[0])                                                                    
