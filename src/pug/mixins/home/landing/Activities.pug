@@ -4,22 +4,22 @@ append variables
 			{
 				image:'activity.png',
 				activity:'Bungee Jumping',
-				description:'Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in',
+				description:`Bungee jumping, often known as bungy jumping, is a sport in which a person jumps from a considerable height while attached to a long elastic line. Usually, the pad is built on a high structure like a structure or a crane, a bridge across a steep ravine`,
 			},
 			{
 				image:'activity.png',
 				activity:'Bungee Jumping',
-				description:'Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in',
+				description:`Bungee jumping, often known as bungy jumping, is a sport in which a person jumps from a considerable height while attached to a long elastic line. Usually, the pad is built on a high structure like a structure or a crane, a bridge across a steep ravine`,
 			},
 			{
 				image:'activity.png',
 				activity:'Bungee Jumping',
-				description:'Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in',
+				description:`Bungee jumping, often known as bungy jumping, is a sport in which a person jumps from a considerable height while attached to a long elastic line. Usually, the pad is built on a high structure like a structure or a crane, a bridge across a steep ravine`,
 			},
 			{
 				image:'activity.png',
 				activity:'Bungee Jumping',
-				description:'Bungee jumping involves leaping from a height connected to a large elastic rope (or cord), which is tied to the feet – or, more specifically, the ankles. This is as adrenaline- filled an activity as any dreamt up by man. And one that both young and old have delighted in',
+				description:`Bungee jumping, often known as bungy jumping, is a sport in which a person jumps from a considerable height while attached to a long elastic line. Usually, the pad is built on a high structure like a structure or a crane, a bridge across a steep ravine`,
 			},
 
 		];
@@ -29,7 +29,7 @@ mixin ActivityIteam(config)
 	.col-12
 		img.w-100(src=`${CWD}assets/img/gallery/${config.image}` width='383'  alt='...')
 		.py-4
-			h4.mb-2.text-1000 Engage in activities like
+			h4.mb-2.text-1000 Participate in activities like
 			h2.mb-3.text-primary.fs-3.fs-md-6=config.activity
 			p.fw-normal.mb-0.pe-lg-9=config.description
 
@@ -37,7 +37,7 @@ mixin Activities
 	+Section.py-7#activities
 		.row.g-0
 			.col-lg-4.order-1
-				img.w-100(src=`${CWD}assets/img/gallery/bungee-jumping.png` height='750' alt='...')  
+				img.w-100.mt-5.mt-lg-0(src=`${CWD}assets/img/gallery/bungee-jumping.png` height='750' alt='...')  
 			.col-lg-8
 				#carouselActivity.carousel.slide(data-bs-ride='carousel')
 					.carousel-inner
@@ -53,7 +53,7 @@ mixin Activities
 						.carousel-item
 							.row.h-100
 								+ActivityIteam(activities[3])    
-					.row.ps-sm-5.ps-md-0.align-items-center
+					.row.ps-sm-5.ps-md-0.align-items-end
 							.col-4.col-sm-6.position-relative.z-index-2
 								ol.carousel-indicators.me-xxl-7.me-xl-4.me-lg-7
 									li.active(data-bs-target='#carouselShare' data-bs-slide-to='0')

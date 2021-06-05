@@ -4,22 +4,22 @@ append variables
       {
         image:'dubai.png',
         country:'Dubai',
-        description:'Dubai Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.',
+        description:`Dubai, a city with many faces, is one of the world's most popular tourist destinations. The Burj Khalifa, the world's highest tower, is located here. The futuristic beauty of new buildings is at the heart of Dubai tourism.`,
       },
       {
         image:'cinnamon.png',
         country:'Maldives',
-        description:'Maldives Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.',
+        description:`Dubai, a city with many faces, is one of the world's most popular tourist destinations. The Burj Khalifa, the world's highest tower, is located here. The futuristic beauty of new buildings is at the heart of Dubai tourism.`,
       },
       {
         image:'dhigu.png',
         country:'Maldives',
-        description:'Maldives Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.',
+        description:`Dubai, a city with many faces, is one of the world's most popular tourist destinations. The Burj Khalifa, the world's highest tower, is located here. The futuristic beauty of new buildings is at the heart of Dubai tourism.`,
       },
       {
         image:'dubai.png',
         country:'Dubai',
-        description:'Dubai Tourism, a hub of futuristic charm that reflects the beauty of nightlife, skyscrapers and extravagant lifestyle. Apart from this, it is also an essential destination for practising a number of adventure sports.',
+        description:`Dubai, a city with many faces, is one of the world's most popular tourist destinations. The Burj Khalifa, the world's highest tower, is located here. The futuristic beauty of new buildings is at the heart of Dubai tourism.`,
       },
 
     ];
@@ -28,7 +28,7 @@ append variables
 mixin Share(config)
   .col-12
     img.w-100(src=`${CWD}assets/img/gallery/${config.image}` height='600'  alt='...')
-    .py-4.ps-sm-5
+    .pt-5.ps-sm-7
       h4.mb-2.text-1000 Share a trip
       h2.mb-3.text-primary.fs-3.fs-md-6=config.country
       p.fw-normal.mb-0=config.description
@@ -54,7 +54,7 @@ mixin ShareTrip
               .carousel-item
                 .row.h-100
                   +Share(items[3])    
-            .row.ps-sm-5.align-items-center
+            .row.ps-sm-7.align-items-end
               .col-4.col-sm-6.position-relative.z-index-2
                 ol.carousel-indicators.me-xxl-7.me-xl-4.me-lg-7
                   li.active(data-bs-target='#carouselShare' data-bs-slide-to='0')

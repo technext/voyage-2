@@ -3,75 +3,66 @@ append variables
     var blogs= [
       {
         image:'blog-1.png',
-        time:'5 min Read',
-        title:'10 ways to pack before a solo trip',
-        text:'As we all know our travels are not always with other people. Sometimes we have to travel for our...', 
+        authorImage:'author-1.png',
+        name:'John Oliver. <span class="fw-normal">5 mins Read. </span>',
+        views:'355',
+        like:'234',
+        reply:'14',
+        title:'How important are shoes in your style?',
+        text:'Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters for the outsiders that we meet every day...', 
       },
       {
         image:'blog-2.png',
-        time:'5 min Read',
-        title:'10 ways to pack before a solo trip',
-        text:'How fascinating is history to you? If the answer is “Yes!”, then imagine yourself on the roads of a city ce...',
+        authorImage:'author-2.png',
+        name:'Haley Wilson . <span class="fw-normal">5 mins Read. </span>',
+        views:'35',
+        like:'23',
+        reply:'14',
+        title:'Fashion trend forecast for  Summer 2021',
+        text:'While the fashion industry has had a calm year, this season has seen some beautiful pieces. Over the previous several weeks, commanding coats, and elegant face masks have ruled Fashion Weeks...',
       },
       {
         image:'blog-3.png',
-        time:'5 min Read',
-        title:'Looking for a good place?',
-        text:'Hotels are a chore to choose when it comes to travelling. Nobody wants to look for a decent place...',
+        authorImage:'author-3.png',
+        name:'Jeff Baley. <span class="fw-normal">5 mins Read. </span>',
+        views:'35',
+        like:'23',
+        reply:'14',
+        title:'Spring exclusive collection for Men & Women',
+        text:'Explore the first real-time photographic fashion magazine NOWFASHION to broadcast exclusive live fashion shows. Some of the most beautiful spring collection i want to share. See the....',
       },
       
     ];
 
 mixin BlogItems(config)
-   .col-md-4.mb-3.mb-md-0
-    .card.card-span.h-100.text-white
-      img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt='...').h-100
-      .card-img-overlay.d-flex.flex-coloumn.flex-center
-      .card-body.px-3.py-4
-        h5.fw-bold.text-1000=config.title 
-        p.text-900=config.text
-      a.stretched-link(href='#!')  
+  .col-sm-9.col-md-4.mb-3.mb-md-0.h-100
+    .card.card-span.text-white.h-100
+      img.img-card(src=`${CWD}assets/img/gallery/${config.image}`  alt='...').h-100
+      .card-body.px-xl-5.px-md-3.pt-0.pb-7
+        .d-flex.justify-content-between.align-items-center.bg-100.mt-n5.me-auto
+          img(src=`${CWD}assets/img/gallery/${config.authorImage}` width='60' alt='...')
+          .d-flex.flex-1.justify-content-around 
+            span.text-900.text-center
+              i.fas.fa-heart.text-primary
+              span.text-900.ms-2=config.views
+            span.text-900.text-center
+              i.fas.fa-eye.text-primary
+              span.text-900.ms-2=config.like
+            span.text-900.text-center
+              i.fas.fa-share.text-primary
+              span.text-900.ms-2=config.reply 
+        h5.text-900.mt-3!=config.name      
+        h3.fw-bold.text-1000.mt-5.text-truncate=config.title 
+        p.text-900.mt-3=config.text
+        a.btn.btn-lg.text-900.fs-1.px-0.hvr-icon-forward(href='#!' role='button') Read more
+          svg.bi.bi-arrow-right-short.hover-icon(xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' viewBox='0 0 16 16')
+            path(fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z')  
 
-mixin TravelBlogs
-  +Section
-    .row.h-100
-      .col-lg-7.mx-auto.text-center.mb-6
-        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Travel Blogs
-      .col-12
-        #carouselBlogs.carousel.slide(data-bs-ride='carousel')
-          .carousel-inner.pb-sm-5
-            .carousel-item.active(data-bs-interval='10000')
-              .row.h-100.align-items-center.g-2                
-                +BlogItems(blogs[0])                                                                    
-                +BlogItems(blogs[1])                                                                    
-                +BlogItems(blogs[2])                                                                    
-            .carousel-item(data-bs-interval='5000')
-              .row.h-100.align-items-center.g-2                
-                +BlogItems(blogs[0])                                                                    
-                +BlogItems(blogs[1])                                                                    
-                +BlogItems(blogs[2])                      
-            .carousel-item(data-bs-interval='3000')
-              .row.h-100.align-items-center.g-2                                  
-                +BlogItems(blogs[0])                                                                    
-                +BlogItems(blogs[1])                                                                    
-                +BlogItems(blogs[2])                       
-            .carousel-item
-              .row.h-100.align-items-center.g-2         
-                +BlogItems(blogs[0])                                                                    
-                +BlogItems(blogs[1])                                                                    
-                +BlogItems(blogs[2])    
-            .row
-              button.carousel-control-prev(type='button' data-bs-target='#carouselBlogs' data-bs-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.visually-hidden Previous
-              button.carousel-control-next(type='button' data-bs-target='#carouselBlogs' data-bs-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.visually-hidden Next                                    
-          .row.flex-center
-            .col-auto.position-relative.z-index-2
-              ol.carousel-indicators.me-xxl-7.me-xl-4.me-lg-7
-                li.active(data-bs-target='#carouselBlogs' data-bs-slide-to='0')
-                li(data-bs-target='#carouselBlogs' data-bs-slide-to='1')
-                li(data-bs-target='#carouselBlogs' data-bs-slide-to='2')
-                li(data-bs-target='#carouselBlogs' data-bs-slide-to='3')
-
+mixin Blog
+  +Section('container-fluid container-lg').py-0.pb-8
+    .row.h-100.g-2.justify-content-center
+      +BlogItems(blogs[0])
+      +BlogItems(blogs[1])
+      +BlogItems(blogs[2])
+      
+       

@@ -52,7 +52,7 @@ const navbarInit = () =>{
      // Change navbar background color on scroll
      window.addEventListener(Events.SCROLL, () => {
       const { scrollTop } = html;
-      let alpha = (scrollTop / windowHeight) * .15;
+      let alpha = (scrollTop / windowHeight) * 1.5;
       // Add class on scroll
       navbar.classList.add('backdrop');
       if(alpha === 0){
