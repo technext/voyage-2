@@ -55,7 +55,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.6.0",
-    "bootstrap": "5.0.0-beta3",
+    "bootstrap": "^5.0.1",
     "is_js": "^0.9.0"
   },
   "browserslist": [
